@@ -1,38 +1,88 @@
-# create-svelte
+# ✨ yt-translate-kit
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+> 자막 키프레임 노가다가 귀찮아서 더 귀찮은 걸 만들었어요.
+>
+> by. Giwon (화이트데브)
 
-## Creating a project
+<img src="./.docs/banner.png" />
 
-If you're seeing this, you've probably already done this step. Congrats!
+<br/>
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## 🧩 기능
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+> 이것저것 많이 만들어볼게요
 
-## Developing
+### 🖥️ 프롬프트 Prompt
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+#### (1) 3줄형 프롬프트
 
-```bash
-npm run dev
+###### 원어/발음/번역을 표시할 때 적합해요. 화이트데브 채널에서 주로 사용해요.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+<img src="./.docs/prompt/type_3.gif" />
 
-## Building
+#### (2) 2줄형 프롬프트
 
-To create a production version of your app:
+###### 원어/번역을 표시할 때 적합해요. 1줄형 프롬프트와 같이 쓰여요.
 
-```bash
-npm run build
-```
+<img src="./.docs/prompt/type_2.gif" />
 
-You can preview the production build with `npm run preview`.
+#### (3) 1줄형 프롬프트
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+###### 노래방(Karaoke) 영상에 적합해요. 2줄형 프롬프트와 같이 쓰여요.
+
+<img src="./.docs/prompt/type_1.gif" />
+
+<br/>
+
+### ⌨️ 텍스트 에디터 Text Editor
+
+#### 3 in 1 수정
+
+<br/>
+
+### 📂 소스 아카이브 Source Archive
+
+#### 각종 이미지 파일
+
+<br/>
+
+###### ...추후 더 많은 기능이 추가 예정
+
+<br/>
+
+---
+
+<br/>
+
+## 🏗️ 브랜치 Merge 순서
+
+release <- main <- dev <- feat/name
+
+<br/>
+
+## 👷‍♂️ 셀프 커밋 규칙
+
+> 기능 개발 브랜치의 접두어(prefix)도 동일하게 합니다.
+>
+> from https://velog.io/@chojs28/Git-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%EA%B7%9C%EC%B9%99
+
+1. 제목과 본문을 빈 행으로 구분한다.
+2. 제목은 50글자 이내로 제한한다.
+3. 제목의 첫 글자는 대문자로 작성한다.
+4. 제목 끝에는 마침표를 넣지 않는다.
+5. 제목은 명령문으로 사용하며 과거형을 사용하지 않는다.
+6. 본문의 각 행은 72글자 내로 제한한다.
+7. 어떻게 보다는 무엇과 왜를 설명한다.
+
+| 커밋 타입 | 설명                                                  |
+| --------- | ----------------------------------------------------- |
+| feat      | 새로운 기능에 대한 커밋                               |
+| fix       | 버그 수정에 대한 커밋                                 |
+| build     | 빌드 관련 파일 수정 / 모듈 설치 또는 삭제에 대한 커밋 |
+| chore     | 그 외 자잘한 수정에 대한 커밋                         |
+| ci        | CI 관련 설정 수정에 대한 커밋                         |
+| docs      | 문서 수정에 대한 커밋                                 |
+| style     | 코드 스타일 혹은 포맷 등에 관한 커밋                  |
+| refactor  | 코드 리팩토링에 대한 커밋                             |
+| test      | 테스트 코드 수정에 대한 커밋                          |
+| perf      | 성능 개선에 대한 커밋                                 |
